@@ -1,17 +1,20 @@
 package hoidanit;
 
+import java.util.Scanner;
+
 public class HelloWorld {
 	public static void main(String[] args) {
-//		int a = 6;
-//		int b = 9;
-//		int c = a + b;
-//		System.out.println("Sum: " + c);
+//		int age = 22;
+//		String name = "Fong";
+//		System.out.println("Info: " + name + ", " + age);
 		
-		int fong = 22; //declare & assign 
+		Scanner scanner = new Scanner(System.in); 
+		System.out.println("Your name is: ");
+		String name = scanner.nextLine();
+		System.out.println("Your age is: ");
+		int age = scanner.nextInt();
+		System.out.println("My name is " + name + ", age = " + age);
+		scanner.close();
 		
-		int test; //declare
-		test = 5 + 9*3 - 10/2; //assign it
-		
-		System.out.println("Test: " + test);
 	}
 }
