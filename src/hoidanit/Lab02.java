@@ -18,6 +18,6 @@ public class Lab02 {
 		
 		System.out.println("P = " + p);
 		System.out.println("S = " + s);
-		
+		System.out.println("Min edge: " + Math.min(hight, width));
 	}
 }
