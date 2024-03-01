@@ -12,5 +12,7 @@ public class Lab03 {
 		double v = Math.pow(edge, 3);
 		
 		System.out.println("V = " + v);
+		
+		sc.close();
 	}
 }

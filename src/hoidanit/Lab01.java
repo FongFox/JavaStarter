@@ -15,5 +15,7 @@ public class Lab01 {
 		System.out.println(name + " co diem = " + score * 1.0);
 		System.out.println("Name: " + name);
 		System.out.println("Score: " + score * 1.0);
+		
+		sc.close();
 	}
 }
