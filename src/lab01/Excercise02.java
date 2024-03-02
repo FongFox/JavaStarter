@@ -1,8 +1,8 @@
-package hoidanit;
+package lab01;
 
 import java.util.Scanner;
 
-public class Lab02 {
+public class Excercise02 {
 	public static void main(String[] args) {
 		System.out.println("Running Lab 02!");
 		
