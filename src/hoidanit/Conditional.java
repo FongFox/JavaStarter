@@ -5,26 +5,30 @@ import java.util.Scanner;
 public class Conditional {
 	public static void main(String[] args) {
 
-//		- dưới 10M: không đóng thuế
-//		- từ 10M tới 15M: thuế 10%
-//		- từ 15 tới 30M : thuế 20%
-//		- trên 30M: thuế 50%
+		System.out.println(">> LỰA CHỌN TÍNH NĂNG <<");
+		System.out.println("++ ------------------ ++");
+		System.out.println("| 1. Cộng 			   |");
+		System.out.println("| 2. Trừ 			   |");
+		System.out.println("| 3. Kết thúc 		   |");
+		System.out.println("++ ------------------ ++");
 
 		Scanner scanner = new Scanner(System.in);
-		System.out.println("Nhap thue = ");
-		int tax = scanner.nextInt();
+		System.out.println("Lựa chọn của bạn là : ");
+		int value = scanner.nextInt();
 
-		if (tax < 10) {
-			System.out.println("Khong dong thue !");
-		} else if (tax >= 10 && tax <= 15) {
-			System.out.println("Thue 10% !");
-		} else if (tax >= 15 && tax <= 30) {
-			System.out.println("Thue 20% !");
-		} else {
-			System.out.println("Thue 50% !");
+		switch (value) {
+		case 1:
+			System.out.println("Ban da lua chon phep cong !");
+			break;
+		case 2:
+			System.out.println("Ban da lua chon phep tru !");
+			break;
+		default:
+			System.out.println("Ban da lua chon thoat chuong trinh !");
+			System.exit(0); // program will immediately exit
 		}
 
+		int value1 = scanner.nextInt();
 		scanner.close();
-
 	}
 }
