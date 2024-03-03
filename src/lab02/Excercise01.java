@@ -18,6 +18,8 @@ public class Excercise01 {
 		System.out.print("Nhap b = ");
 		double b = sc.nextDouble();
 
+		System.out.printf("Giai phuong trinh %.0fx + %.0f = 0 !\n", a, b);
+
 		if (a == 0) {
 			if (b == 0) {
 				System.out.println("Phuong trinh vo so nghiem !");
@@ -25,7 +27,8 @@ public class Excercise01 {
 				System.out.println("Phuong trinh vo nghiem !");
 			}
 		} else {
-			System.out.println("X = " + (-(b / a) * 1.00));
+			double x = -(b / a);
+			System.out.printf("X = %.3f\n", x);
 		}
 
 		System.out.println("Chay thanh cong !");

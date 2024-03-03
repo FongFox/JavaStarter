@@ -26,22 +26,33 @@ public class Excercise02 {
 		System.out.print("Nhap c = ");
 		double c = sc.nextDouble();
 
+		System.out.printf("Giai phuong trinh %.0fx^2 + %.0fx + %.0f = 0 ! \n", a, b, c);
+
 		if (a == 0) {
-			if (b == 0) {
+			if (b == 0 && c != 0) {
+				System.out.println("Phuong trinh vo nghiem !");
+			} else if (b != 0 && c == 0) {
 				System.out.println("Phuong trinh vo so nghiem !");
 			} else {
-				System.out.println("Phuong trinh vo nghiem !");
+				double x = -c / b;
+
+				System.out.printf("Phuong trinh co nghiem x = %.2f \n", x);
 			}
 		} else {
-			double delta = Math.pow(b, 2) - 4 * a * c;
+			double delta = Math.pow(b, 2) - (4 * a * c);
 			if (delta < 0) {
 				System.out.println("Phuong trinh vo nghiem !");
 			} else if (delta == 0) {
-				System.out.println("Phuong trinh co nghiem kep x = " + (-b / (2 * a)));
+				double x = -b / (2 * a);
+
+				System.out.printf("Phuong trinh co nghiem kep x = %.2f \n", x);
 			} else {
+				double x = (-b + Math.sqrt(delta)) / (2 * a);
+				double y = (-b - Math.sqrt(delta)) / (2 * a);
+
 				System.out.println("Phuong trinh co 2 nghiem rieng biet !");
-				System.out.println("X (1) = " + ((-b + Math.sqrt(delta)) / (2 * a)) * 1.00);
-				System.out.println("X (2) = " + ((-b - Math.sqrt(delta)) / (2 * a)) * 1.00);
+				System.out.printf("X = %.2f \n", x);
+				System.out.printf("Y = %.2f \n", y);
 			}
 		}
 

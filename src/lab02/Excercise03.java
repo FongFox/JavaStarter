@@ -17,13 +17,12 @@ public class Excercise03 {
 		System.out.println("Chuong trinh tinh tien dien !");
 		System.out.print("Nhap tien dien: ");
 		int electricalMoney = sc.nextInt();
-		int totalMoney = 0;
 
 		if (electricalMoney <= 100) {
-			totalMoney = electricalMoney * 1000;
+			int totalMoney = electricalMoney * 1000;
 			System.out.println("Tien dien phai tra: " + totalMoney + " VND");
 		} else if (electricalMoney > 100) {
-			totalMoney = (100 * 1000) + ((electricalMoney - 100) * 1500);
+			int totalMoney = (100 * 1000) + ((electricalMoney - 100) * 1500);
 			System.out.println("Tien dien phai tra: " + totalMoney + " VND");
 		}
 
