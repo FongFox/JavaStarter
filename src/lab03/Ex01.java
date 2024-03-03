@@ -16,6 +16,7 @@ public class Ex01 {
 		for (int i = 2; i < x - 1; i++) {
 			if (x % i == 0) {
 				System.out.printf("%d khong phai la so nguyen to! \n", x);
+				System.out.println("Uoc so khac: " + i);
 				System.out.println("Run complete! Exiting!!!");
 				System.exit(i);
 			}
