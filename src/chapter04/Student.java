@@ -5,13 +5,24 @@ public class Student {
 	// Class Attributes
 	String name;
 	int age;
-	String fullName;
-	String firstName;
-	String lastName;
-	String emailAddress;
+
+	// Class Constructor
+	public Student() {
+
+	}
+
+	public Student(String name, int age) {
+		this.name = name;
+		this.age = age;
+	}
 
 	// Class Methods (or class functions)
 	void learnJava() {
+		System.out.println("Learn Java with Youtube Hỏi Dân IT");
+	}
+
+	// Function Overloading
+	void learnJava(int a) {
 		System.out.println("Learn Java with Youtube Hỏi Dân IT");
 	}
 
