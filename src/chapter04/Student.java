@@ -3,8 +3,8 @@ package chapter04;
 public class Student {
 
 	// Class Attributes
-	String name;
-	int age;
+	private String name;
+	private int age;
 
 	// Class Constructor
 	public Student() {
