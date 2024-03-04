@@ -44,15 +44,15 @@ public class Product {
 		return tax;
 	}
 
+	// Return Tax Price
 	public double getTaxPrice() {
 		return price * tax;
 	}
 
 	// Method
 	public void inputProduct() {
-		System.out.println(">>> Nhap Thong Tin San Pham <<<");
-
 		Scanner sc = new Scanner(System.in);
+		System.out.println(">>> Nhap Thong Tin San Pham <<<");
 
 		System.out.print("Nhap ten san pham: ");
 		name = sc.nextLine();
@@ -61,7 +61,7 @@ public class Product {
 		System.out.print("Nhap thue san pham: ");
 		tax = sc.nextDouble();
 
-		sc.close();
+//		sc.close();
 	}
 
 	public void outputProduct() {
@@ -71,4 +71,5 @@ public class Product {
 		System.out.println("Thue san pham: " + tax);
 		System.out.println("Tien thue san pham: " + getTaxPrice());
 	}
+
 }
