@@ -1,6 +1,12 @@
 package chapter07;
 
 public class SinhVienIT extends SinhVien {
+	@Override
+	void tinhDiem() {
+		// TODO Auto-generated method stub
+
+	}
+
 	private String language;
 
 	public SinhVienIT(String id, String name, double price, double tax, String language) {

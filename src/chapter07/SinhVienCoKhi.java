@@ -1,6 +1,12 @@
 package chapter07;
 
 public class SinhVienCoKhi extends SinhVien {
+	@Override
+	void tinhDiem() {
+		// TODO Auto-generated method stub
+
+	}
+
 	private String skill;
 
 	public SinhVienCoKhi() {

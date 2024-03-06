@@ -1,10 +1,12 @@
 package chapter07;
 
-public class SinhVien {
+public abstract class SinhVien {
 	protected String id;
 	protected String name;
 	protected double price;
 	protected double tax;
+
+	abstract void tinhDiem();
 
 	public SinhVien() {
 
