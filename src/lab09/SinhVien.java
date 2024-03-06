@@ -9,7 +9,6 @@ public class SinhVien {
 	private int age;
 
 	public SinhVien(String id, String fullName, double score, int age) {
-		super();
 		this.id = id;
 		this.fullName = fullName;
 		this.score = score;
@@ -58,11 +57,13 @@ public class SinhVien {
 	}
 
 	public void input() {
-		try (Scanner sc = new Scanner(System.in)) {
+		Scanner sc = new Scanner(System.in);
+		try {
 			System.out.println("Nhap mssv: ");
 			this.id = sc.nextLine();
 			System.out.println("Nhap ho ten: ");
 			this.fullName = sc.nextLine();
+
 			while (true) {
 				try {
 					System.out.println("Nhap diem: ");
@@ -77,8 +78,10 @@ public class SinhVien {
 				} catch (Exception e) {
 					// TODO: handle exception
 					System.out.println("Run Error!");
+					sc.next();
 				}
 			}
+
 			while (true) {
 				try {
 					System.out.println("Nhap tuoi: ");
@@ -93,11 +96,15 @@ public class SinhVien {
 				} catch (Exception e) {
 					// TODO: handle exception
 					System.out.println("Run Error!");
+					sc.next();
 				}
 			}
+
 		} catch (Exception e) {
 			// TODO: handle exception
 			System.out.println("Run error Exit Program!");
+		} finally {
+			sc.close();
 		}
 	}
 }
